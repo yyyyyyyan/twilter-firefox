@@ -1,0 +1,32 @@
+{
+
+	"manifest_version": 2,
+	"name": "Twilter",
+	"version": "1.0",
+
+	"description": "Filter tweets from a specified user/with a specified string to an user defined text",
+	"homepage_url": "https://github.com/yanorestes/twilter-firefox",
+	"icons": {
+		"48": "icons/filter.svg",
+		"96": "icons/filter.svg"
+	},
+
+	"permissions": [
+		"activeTab",
+		"storage"
+	],
+
+	"browser_action": {
+		"default_icon": "icons/filter.svg",
+		"default_title": "Twilter",
+		"default_popup": "popup/filter_settings.html"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://twitter.com/"],
+			"js": ["twilter.js"]
+		}
+	]
+
+}

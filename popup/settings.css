@@ -1,0 +1,17 @@
+html, body {
+	width: 300px;
+	color: black;
+}
+
+.textInput {
+	width: 90%;
+	margin-bottom: 4px;
+}
+
+.radioInput {
+	margin-left: 50px;
+}
+
+button {
+	width: 100%;
+}

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="settings.css">
+</head>
+<body>
+	<div id="popup-content">
+		<input  class="textInput" id="userToFilter" type="text" placeholder="User">
+		<input class="radioInput" id="userOpt" type="radio" name="filterOpt" value="user" checked>User
+		<input class="radioInput" id="wordOpt" type="radio" name="filterOpt" value="word">Word
+		<input class="textInput" id="filterTo" type="text" placeholder="Filter tweets to">
+		<button id="addBtn">Add filter</button>
+		<h4>Users</h4>
+		<ul id="listUsers"></ul>
+		<h4>Words</h4>
+		<ul id="listWords"></ul>
+	</div>
+	<script type="text/javascript" src="settings.js"></script>
+</body>
+</html>
