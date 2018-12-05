@@ -15,3 +15,7 @@ html, body {
 button {
 	width: 100%;
 }
+
+ul {
+	list-style: none;
+}
