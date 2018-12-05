@@ -14,8 +14,23 @@ html, body {
 
 button {
 	width: 100%;
+	margin-bottom: 2px;
+}
+
+.removeBtn {
+	color: black;
+	float: right;
 }
 
 ul {
 	list-style: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 0 10px -5px rgba(0,0,0,0.5);
+	padding: 0;
+}
+
+ul li {
+	padding: 10px;
+	border: 1px solid #ccc;
 }
