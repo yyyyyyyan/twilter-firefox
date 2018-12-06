@@ -32,7 +32,7 @@ function removeFilter(filterType, filterToRemove, item) {
 
 function setFilter(filterType, toFilter, filterTo, item) {
 	item.filters[filterType] = item.filters.hasOwnProperty(filterType) ? item.filters[filterType] : {};
-	item.filters[filterType][toFilter] = filterTo;
+	item.filters[filterType][toFilter.toLowerCase()] = filterTo;
 	browser.storage.local.set({filters: item.filters});
 	let ul = document.getElementById(filterType);
 	let li = createLi(toFilter, filterTo);

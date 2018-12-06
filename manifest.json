@@ -24,8 +24,8 @@
 
 	"content_scripts": [
 		{
-			"matches": ["*://twitter.com/"],
-			"js": ["twilter.js"]
+			"matches": ["*://twitter.com/*"],
+			"js": ["jquery-3.3.1.min.js", "twilter.js"]
 		}
 	]
 
